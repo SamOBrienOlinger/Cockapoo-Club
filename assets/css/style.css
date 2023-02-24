@@ -241,7 +241,9 @@ div.dropdown-menu {
 	height: 100%
 }
 .fa {
-	color: #7112ee;
+	/* color: #7112ee; */
+
+	color: #fafafa;
 }
 #free-supports {
 	padding: 2vh 0;
@@ -656,4 +658,20 @@ section.form-section div {
 		font-size: 2vw;
 		line-height: 6vh
 	}
+}
+
+#spoodle {
+	margin-left: auto;
+	margin-right: auto;
+	outline: solid;
+	color: #310d5f;
+	/* width: 40vw; */
+	height: 40vh;
+	background-color: #7112ee;
+	text-align: center;
+}
+
+#fa-div {
+
+	font-size: 5rem;
 }
