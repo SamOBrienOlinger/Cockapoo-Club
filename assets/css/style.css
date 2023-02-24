@@ -663,15 +663,16 @@ section.form-section div {
 #spoodle {
 	margin-left: auto;
 	margin-right: auto;
-	outline: solid;
-	color: #310d5f;
-	/* width: 40vw; */
+	/* outline: solid;
+	color: #310d5f; */
+	width: 40vw;
 	height: 40vh;
-	background-color: #7112ee;
-	text-align: center;
+	/* background-color: #7112ee;
+	text-align: center; */
+	background: url(../Images/logo-spoodlespace.webp) center center no-repeat;
 }
 
-#fa-div {
+/* #fa-div {
 
 	font-size: 5rem;
-}
+} */
