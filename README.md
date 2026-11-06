@@ -4,7 +4,7 @@ A fictional Dublin dog-club website created as a frontend portfolio project. It 
 
 **HTML · CSS · JavaScript**
 
-[Visit the website](https://samobrienolinger.github.io/Cockapoo-Club/) · [Getting started](#getting-started) · [Repository guide](#repository-guide) · [Checks](#checks-and-review) · [Credits](#credits-and-reuse)
+[Visit the website](https://samobrienolinger.github.io/Cockapoo-Club/) · [Getting started](#getting-started) · [Data model](#entity-relationship-diagram) · [Repository guide](#repository-guide) · [Checks](#checks-and-review) · [Credits](#credits-and-reuse)
 
 <img src="assets/README.md-images/README.md-screens.png" alt="Cockapoo Club shown on different screen sizes" width="880">
 
@@ -15,6 +15,38 @@ A fictional Dublin dog-club website created as a frontend portfolio project. It 
 - View club information and join-form layouts.
 
 > **Project notes:** This is a portfolio demonstration. The static forms and member pages do not by themselves provide a server-side membership service.
+
+## Entity relationship diagram
+
+The frontend contains dog-care pages, a photo gallery and a join form. The gallery embeds its photos in HTML. The join form posts its fields to the course's demonstration endpoint. [Care page](keep-your-poo-healthy.html) · [Photo gallery](furry-fun-foto-gallery.html) · [Join form](join-form.html)
+
+```mermaid
+erDiagram
+    accTitle: Cockapoo Club static site content
+    accDescr: The club site presents care pages, a photo gallery and a demonstration join form. The gallery contains photos and the form contains input fields.
+    "Club Site" ||--|{ "Care Page" : presents
+    "Club Site" ||--|| Gallery : features
+    "Club Site" ||--|| "Join Form" : offers
+    Gallery ||--|{ Photo : displays
+    "Join Form" ||--|{ "Form Field" : collects
+
+    "Care Page" {
+        path file
+        string title
+    }
+    Photo {
+        path src
+        string alt
+    }
+    "Join Form" {
+        url action
+        string method
+    }
+    "Form Field" {
+        string name
+        string type
+    }
+```
 
 ## Getting started
 
