@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 500" width="580" height="500" role="img" aria-labelledby="erd-title erd-desc"><title id="erd-title">Cockapoo Club static site content</title><desc id="erd-desc">The club site presents care pages, a photo gallery and a demonstration join form. The gallery contains photos and the form contains input fields.</desc><metadata data-format="mermaid">erDiagram
+    accTitle: Cockapoo Club static site content
+    accDescr: The club site presents care pages, a photo gallery and a demonstration join form. The gallery contains photos and the form contains input fields.
+    "Club Site" ||--|{ "Care Page" : presents
+    "Club Site" ||--|| Gallery : features
+    "Club Site" ||--|| "Join Form" : offers
+    Gallery ||--|{ Photo : displays
+    "Join Form" ||--|{ "Form Field" : collects
+
+    "Care Page" {
+        path file
+        string title
+    }
+    Photo {
+        path src
+        string alt
+    }
+    "Join Form" {
+        url action
+        string method
+    }
+    "Form Field" {
+        string name
+        string type
+    }</metadata><style>:root {
+  --panel:#f7fafc; --border:#c7d8e4; --heading:#14354b; --accent:#128276;
+  --card:#174b62; --card-title:#fff; --text:#183448; --muted:#486278;
+  --row:#fff; --stripe:#edf5f9; --rule:#9ab7c9; --line:#486980;
+  --label-bg:#e2f3ee; --label-text:#195649;
+}
+@media (prefers-color-scheme:dark) {
+  :root {
+    --panel:#101c2a; --border:#3c566c; --heading:#eaf5fe; --accent:#53c7b2;
+    --card:#25526b; --card-title:#fff; --text:#e0edf6; --muted:#b4cadd;
+    --row:#192b3c; --stripe:#1e3448; --rule:#52738a; --line:#a3becf;
+    --label-bg:#1b3c41; --label-text:#c3f4e8;
+  }
+}
+text { font-family:Arial, Helvetica, sans-serif; }
+.panel { fill:var(--panel); stroke:var(--border); }
+.accent { fill:var(--accent); }
+.graphic-title { fill:var(--heading); font-weight:700; font-size:16px; }
+.entityBox { fill:var(--card); stroke:var(--rule); }
+.entity-heading { fill:var(--card-title); font-size:16px; font-weight:700; text-anchor:middle; dominant-baseline:middle; }
+.attributeBoxOdd { fill:var(--row); stroke:var(--rule); stroke-width:.8; }
+.attributeBoxEven { fill:var(--stripe); stroke:var(--rule); stroke-width:.8; }
+.attribute-text { fill:var(--text); font-size:13.6px; dominant-baseline:middle; }
+.attribute-type, .attribute-comment { fill:var(--muted); }
+.attribute-key { fill:var(--label-text); font-weight:700; }
+.relationshipLine { fill:none; stroke:var(--line); stroke-width:1.25; }
+.relationshipLabel { fill:var(--label-text); font-size:14px; font-weight:600; text-anchor:middle; dominant-baseline:middle; }
+.relationshipLabelBox { fill:var(--label-bg); }
+marker path { stroke:var(--line); fill:none; }
+marker circle { stroke:var(--line); fill:var(--panel); }</style><defs><marker orient="auto" markerHeight="18" markerWidth="18" refY="9" refX="0" id="ONLY_ONE_START" markerUnits="userSpaceOnUse"><path d="M9,0 L9,18 M15,0 L15,18" fill="none" stroke="gray"/></marker><marker orient="auto" markerHeight="18" markerWidth="18" refY="9" refX="18" id="ONLY_ONE_END" markerUnits="userSpaceOnUse"><path d="M3,0 L3,18 M9,0 L9,18" fill="none" stroke="gray"/></marker><marker orient="auto" markerHeight="36" markerWidth="45" refY="18" refX="27" id="ONE_OR_MORE_END" markerUnits="userSpaceOnUse"><path d="M3,9 L3,27 M9,18 Q27,0 45,18 Q27,36 9,18" fill="none" stroke="gray"/></marker></defs><rect class="panel" x=".5" y=".5" width="579" height="499" rx="14"/><rect class="accent" x="22" y="18" width="26" height="3" rx="1.5"/><text class="graphic-title" x="22" y="40" aria-hidden="true"><tspan x="22" y="40">Cockapoo Club static site content</tspan></text><g transform="translate(7.48 49)"><path marker-start="url(#ONLY_ONE_START)" marker-end="url(#ONE_OR_MORE_END)" d="M228.594,61.295L202.878,70.246C177.161,79.197,125.729,97.098,100.013,114.383C74.297,131.667,74.297,148.333,74.297,156.667L74.297,165" class="er relationshipLine"/><path marker-start="url(#ONLY_ONE_START)" marker-end="url(#ONLY_ONE_END)" d="M282.594,65L282.594,73.333C282.594,81.667,282.594,98.333,282.594,117.917C282.594,137.5,282.594,160,282.594,171.25L282.594,182.5" class="er relationshipLine"/><path marker-start="url(#ONLY_ONE_START)" marker-end="url(#ONLY_ONE_END)" d="M336.594,61.302L362.298,70.251C388.003,79.201,439.411,97.101,465.116,114.466C490.82,131.831,490.82,148.661,490.82,157.077L490.82,165.492" class="er relationshipLine"/><path marker-start="url(#ONLY_ONE_START)" marker-end="url(#ONE_OR_MORE_END)" d="M282.594,227.5L282.594,238.75C282.594,250,282.594,272.5,282.594,292.083C282.594,311.667,282.594,328.333,282.594,336.667L282.594,345" class="er relationshipLine"/><path marker-start="url(#ONLY_ONE_START)" marker-end="url(#ONE_OR_MORE_END)" d="M490.82,244.508L490.82,252.923C490.82,261.339,490.82,278.169,490.82,294.918C490.82,311.667,490.82,328.333,490.82,336.667L490.82,345" class="er relationshipLine"/><g transform="translate(228.59375,20 )"><rect height="45" width="108" y="0" x="0" class="er entityBox"/><text transform="translate(54,22.5)" y="0" x="0" class="entity-heading">Club Site</text></g><g transform="translate(20,165 )"><rect height="80" width="108.59375" y="0" x="0" class="er entityBox"/><text transform="translate(54.296875,14.333333333333332)" y="0" x="0" class="entity-heading">Care Page</text><rect height="25.666666666666664" width="60.34375" y="28.666666666666664" x="0" class="er attributeBoxOdd"/><text transform="translate(5.333333333333333,41.5)" y="0" x="0" class="attribute-text attribute-type">path</text><rect height="25.666666666666664" width="48.25" y="28.666666666666664" x="60.34375" class="er attributeBoxOdd"/><text transform="translate(65.67708333333333,41.5)" y="0" x="0" class="attribute-text">file</text><rect height="25.666666666666664" width="60.34375" y="54.33333333333333" x="0" class="er attributeBoxEven"/><text transform="translate(5.333333333333333,67.16666666666666)" y="0" x="0" class="attribute-text attribute-type">string</text><rect height="25.666666666666664" width="48.25" y="54.33333333333333" x="60.34375" class="er attributeBoxEven"/><text transform="translate(65.67708333333333,67.16666666666666)" y="0" x="0" class="attribute-text">title</text></g><g transform="translate(228.59375,182.5 )"><rect height="45" width="108" y="0" x="0" class="er entityBox"/><text transform="translate(54,22.5)" y="0" x="0" class="entity-heading">Gallery</text></g><g transform="translate(436.8203125,165.4921875 )"><rect height="79.015625" width="108" y="0" x="0" class="er entityBox"/><text transform="translate(54,13.841145833333332)" y="0" x="0" class="entity-heading">Join Form</text><rect height="25.666666666666664" width="47.953125" y="27.682291666666664" x="0" class="er attributeBoxOdd"/><text transform="translate(5.333333333333333,40.515625)" y="0" x="0" class="attribute-text attribute-type">url</text><rect height="25.666666666666664" width="60.046875" y="27.682291666666664" x="47.953125" class="er attributeBoxOdd"/><text transform="translate(53.286458333333336,40.515625)" y="0" x="0" class="attribute-text">action</text><rect height="25.666666666666664" width="47.953125" y="53.34895833333333" x="0" class="er attributeBoxEven"/><text transform="translate(5.333333333333333,66.18229166666666)" y="0" x="0" class="attribute-text attribute-type">string</text><rect height="25.666666666666664" width="60.046875" y="53.34895833333333" x="47.953125" class="er attributeBoxEven"/><text transform="translate(53.286458333333336,66.18229166666666)" y="0" x="0" class="attribute-text">method</text></g><g transform="translate(228.59375,345 )"><rect height="79.015625" width="108" y="0" x="0" class="er entityBox"/><text transform="translate(54,13.841145833333332)" y="0" x="0" class="entity-heading">Photo</text><rect height="25.666666666666664" width="61.46315002441406" y="27.682291666666664" x="0" class="er attributeBoxOdd"/><text transform="translate(5.333333333333333,40.515625)" y="0" x="0" class="attribute-text attribute-type">path</text><rect height="25.666666666666664" width="46.53684997558594" y="27.682291666666664" x="61.46315002441406" class="er attributeBoxOdd"/><text transform="translate(66.79648335774739,40.515625)" y="0" x="0" class="attribute-text">src</text><rect height="25.666666666666664" width="61.46315002441406" y="53.34895833333333" x="0" class="er attributeBoxEven"/><text transform="translate(5.333333333333333,66.18229166666666)" y="0" x="0" class="attribute-text attribute-type">string</text><rect height="25.666666666666664" width="46.53684997558594" y="53.34895833333333" x="61.46315002441406" class="er attributeBoxEven"/><text transform="translate(66.79648335774739,66.18229166666666)" y="0" x="0" class="attribute-text">alt</text></g><g transform="translate(436.59375,345 )"><rect height="79.015625" width="108.453125" y="0" x="0" class="er entityBox"/><text transform="translate(54.2265625,13.841145833333332)" y="0" x="0" class="entity-heading">Form Field</text><rect height="25.666666666666664" width="53.84375" y="27.682291666666664" x="0" class="er attributeBoxOdd"/><text transform="translate(5.333333333333333,40.515625)" y="0" x="0" class="attribute-text attribute-type">string</text><rect height="25.666666666666664" width="54.609375" y="27.682291666666664" x="53.84375" class="er attributeBoxOdd"/><text transform="translate(59.177083333333336,40.515625)" y="0" x="0" class="attribute-text">name</text><rect height="25.666666666666664" width="53.84375" y="53.34895833333333" x="0" class="er attributeBoxEven"/><text transform="translate(5.333333333333333,66.18229166666666)" y="0" x="0" class="attribute-text attribute-type">string</text><rect height="25.666666666666664" width="54.609375" y="53.34895833333333" x="53.84375" class="er attributeBoxEven"/><text transform="translate(59.177083333333336,66.18229166666666)" y="0" x="0" class="attribute-text">type</text></g><rect height="18" width="71.38" y="87.07392883300781" x="99.35" class="er relationshipLabelBox" rx="6"/><text y="96.07392883300781" x="135.0398712158203" class="er relationshipLabel">presents</text><rect height="17.015625" width="67.81" y="115.2421875" x="248.69" class="er relationshipLabelBox" rx="6"/><text y="123.75" x="282.593994140625" class="er relationshipLabel">features</text><rect height="17.015625" width="49.73" y="87.6728744506836" x="405.42" class="er relationshipLabelBox" rx="6"/><text y="96.1806869506836" x="430.2907409667969" class="er relationshipLabel">offers</text><rect height="18" width="67.81" y="277.25" x="248.69" class="er relationshipLabelBox" rx="6"/><text y="286.25" x="282.593994140625" class="er relationshipLabel">displays</text><rect height="17.015625" width="63.36" y="286.2461853027344" x="459.14" class="er relationshipLabelBox" rx="6"/><text y="294.7539978027344" x="490.82000732421875" class="er relationshipLabel">collects</text></g></svg>

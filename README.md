@@ -20,33 +20,7 @@ A fictional Dublin dog-club website created as a frontend portfolio project. It 
 
 The frontend contains dog-care pages, a photo gallery and a join form. The gallery embeds its photos in HTML. The join form posts its fields to the course's demonstration endpoint. [Care page](keep-your-poo-healthy.html) · [Photo gallery](furry-fun-foto-gallery.html) · [Join form](join-form.html)
 
-```mermaid
-erDiagram
-    accTitle: Cockapoo Club static site content
-    accDescr: The club site presents care pages, a photo gallery and a demonstration join form. The gallery contains photos and the form contains input fields.
-    "Club Site" ||--|{ "Care Page" : presents
-    "Club Site" ||--|| Gallery : features
-    "Club Site" ||--|| "Join Form" : offers
-    Gallery ||--|{ Photo : displays
-    "Join Form" ||--|{ "Form Field" : collects
-
-    "Care Page" {
-        path file
-        string title
-    }
-    Photo {
-        path src
-        string alt
-    }
-    "Join Form" {
-        url action
-        string method
-    }
-    "Form Field" {
-        string name
-        string type
-    }
-```
+[![The club site presents care pages, a photo gallery and a demonstration join form. The gallery contains photos and the form contains input fields.](docs/diagrams/cockapoo-club-static-site-content.svg)](docs/diagrams/cockapoo-club-static-site-content.svg)
 
 ## Getting started
 
